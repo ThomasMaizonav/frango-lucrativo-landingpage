@@ -36,7 +36,7 @@
       <small>Método Oficial</small>
     </div>
   </div>
-  <a href="#oferta" class="nav-cta">Quero Comprar →</a>
+  <a href="#oferta" class="nav-cta">Comprar por R$49,90 →</a>
 </nav>
 
 <!-- ==================== HERO ==================== -->
@@ -108,7 +108,9 @@
   </div>
 
   <a href="#oferta" class="btn-cta">
-    Quero Começar Agora <span class="arrow">→</span>
+    <span class="btn-cta-main">Quero Comprar Agora</span>
+    <span class="btn-cta-sub">por R$49,90</span>
+    <span class="arrow">→</span>
   </a>
   <p class="urgency-note"><strong>⚡ Valor atual de R$49,90</strong> — acesso liberado logo após a compra</p>
 
@@ -483,7 +485,9 @@
       <p>Se você quer aprender uma técnica útil, prática e com possibilidade real de aplicação, este é o momento de começar.</p>
 
       <a href="#oferta" class="btn-cta">
-        Sim! Quero Começar Agora →
+        <span class="btn-cta-main">Sim! Quero Comprar Agora</span>
+        <span class="btn-cta-sub">por R$49,90</span>
+        <span class="arrow">→</span>
       </a>
       <p style="margin-top:14px;font-size:13px;color:#888;">🔒 Compra 100% segura • Garantia de 7 dias • Acesso imediato</p>
     </div>
@@ -553,9 +557,18 @@
   <p style="margin-top:12px;">© 2025 Frango Lucrativo. Todos os direitos reservados.</p>
 </footer>
 
-<!-- STICKY CTA MOBILE -->
-<div class="sticky-cta">
-  <a href="#oferta">🍗 Comprar Agora por R$49,90 →</a>
+<div class="exit-intent-modal" id="exit-intent-modal" aria-hidden="true">
+  <div class="exit-intent-backdrop" data-close-exit-modal></div>
+  <div class="exit-intent-dialog" role="dialog" aria-modal="true" aria-labelledby="exit-intent-title">
+    <button class="exit-intent-close" type="button" aria-label="Fechar aviso" data-close-exit-modal>×</button>
+    <div class="exit-intent-tag">Espere um instante</div>
+    <h2 id="exit-intent-title">Você ainda pode garantir o curso por R$49,90</h2>
+    <p>Se quiser, aproveite o acesso imediato, a garantia de 7 dias e conclua a compra agora.</p>
+    <div class="exit-intent-actions">
+      <a href="#oferta" class="btn-offer exit-intent-cta">Quero ver a oferta</a>
+      <button class="exit-intent-secondary" type="button" id="exit-intent-dismiss">Continuar saindo</button>
+    </div>
+  </div>
 </div>
 
 <script src="/assets/js/main.js" defer></script>
